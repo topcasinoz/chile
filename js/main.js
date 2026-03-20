@@ -50,8 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const msg = document.getElementById('loading-msg');
     if (msg) msg.style.display = 'block';
     setTimeout(() => {
-      window.location.href = 'https://t1l9.com/?utm_campaign=FrfzGsCeMp&v1=[v1]&v2=[v2]&v3=[v3]';
+      window.location.href = 'https://inf4hub.com/?utm_campaign=XCspM3zyKa&v1=[v1]&v2=[v2]&v3=[v3]';
     }, 5500);
-    btn.addEventListener('click', () => window.location.href = 'https://t1l9.com/?utm_campaign=FrfzGsCeMp&v1=[v1]&v2=[v2]&v3=[v3]');
+    btn.addEventListener('click', () => window.location.href = 'https://inf4hub.com/?utm_campaign=XCspM3zyKa&v1=[v1]&v2=[v2]&v3=[v3]');
   }
 });
