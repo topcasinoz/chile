@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FunZone Sports — Tu Centro Definitivo de Conocimiento Deportivo</title>
+<meta name="description" content="Bienvenido a FunZone Sports, el destino principal para guías completas sobre Fútbol Americano, Baloncesto, Béisbol y más. Mejora tu experiencia como fan hoy.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/dark-mode.css">
+<script defer src="js/main.js"></script>
+
+<style>
+.spinner {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: spin 1s linear infinite;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+#verification-modal {
+  background: rgba(30, 30, 40, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 350px;
+  width: 90%;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  font-family: system-ui, -apple-system, sans-serif;
+  text-align: center;
+  color: #f0f0f0;
+}
+#verification-modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1px);
+}
+#verification-modal h2 {
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: 600;
+}
+#verification-modal p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 22px;
+  color: #c5c5dd;
+}
+#verify-btn {
+  background: #6d28d9;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  width: 100%;
+}
+body {
+  background: url('images/lap.png') no-repeat center center fixed;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  body {
+    background-image: url('images/mob.png');
+  }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="site-header" role="banner">
+  <div class="container nav-wrap">
+    <div class="brand">
+      <img src="images/logo.svg" alt="Logo FunZone Sports" class="logo" style="width:40px;height:auto;">
+      <span class="brand-name">Roja-FunZone Sports</span>
+    </div>
+
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menú</button>
+
+    <nav id="nav" class="nav" role="navigation" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pages/guide.html">Fútbol Americano</a></li>
+        <li><a href="pages/basketball.html">Baloncesto</a></li>
+        <li><a href="pages/baseball.html">Béisbol</a></li>
+        <li class="more">
+          <button class="more-btn" aria-haspopup="true" aria-expanded="false">Más</button>
+          <ul class="dropdown">
+            <li><a href="pages/icehockey.html">Hockey sobre Hielo</a></li>
+            <li><a href="pages/mls.html">Fútbol (MLS)</a></li>
+            <li><a href="pages/college.html">Deportes Universitarios</a></li>
+            <li><a href="pages/events.html">Eventos Principales</a></li>
+            <li><a href="pages/grants.html">Programas Deportivos</a></li>
+            <li><a href="pages/about.html">Sobre Nosotros</a></li>
+            <li><a href="pages/contact.html">Contacto</a></li>
+            <li><a href="pages/privacy.html">Política de Privacidad</a></li>
+            <li><a href="pages/terms.html">Términos y Condiciones</a></li>
+            <li><a href="pages/disclaimer.html">Descargo de Responsabilidad</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<dialog id="verification-modal" class="modal-dialog">
+  <h2>Notificación del Sitio Roja</h2>
+  <p>Serás redirigido a nuestro sitio asociado para garantizar la seguridad del contenido y el cumplimiento de políticas.</p>
+  <button id="verify-btn" class="btn">Comenzar</button>
+  <p id="loading-msg" style="display:none; margin-top:10px;">
+    Verificando conexión, por favor espera
+    <span class="spinner"></span>
+  </p>
+</dialog>
+
+</body>
+</html>
